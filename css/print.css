@@ -1,0 +1,11 @@
+/* Only the invoice is printed / saved as PDF */
+@media print {
+  body { zoom: 1; }
+  body * { visibility: hidden; }
+  .stage, .stage * { visibility: visible; }
+  .stage { position: absolute; inset: 0; padding: 0; background: none !important; box-shadow: none; }
+  #paper { box-shadow: none; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .x, .add, .hint { display: none !important; }
+  #paper [contenteditable], #paper input { border-bottom: 0 !important; background: none !important; }
+  #paper [contenteditable]::after { content: none !important; }
+}

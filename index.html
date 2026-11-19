@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>invoice generator</title>
+  <meta name="description" content="Pick a design, type straight onto the page, and save a polished invoice as a PDF.">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <nav>
+    <span class="brand"><img src="assets/img/logo.png" alt="" width="34" height="34">invoice generator</span>
+    <a class="btn" href="#create">Create invoice</a>
+  </nav>
+
+  <section class="hero">
+    <div class="copy">
+      <h1>make them feel happy paying you.</h1>
+      <p class="sub">Pick a style, type straight onto the page, and send a polished invoice in under a minute. No account needed.</p>
+      <a class="btn" href="#create">Get started</a>
+    </div>
+    <img class="art" src="assets/img/hero.png" alt="A cash register with a dollar sign on its screen">
+  </section>
+
+  <section id="create">
+    <h2>Make it yours.</h2>
+    <p class="sub">Click anything on the page to edit it. Totals update as you type.</p>
+
+    <div class="pick">
+      <span>Style</span>
+      <div class="dd" id="themeMenu">
+        <button type="button" class="ddb" aria-haspopup="listbox" aria-expanded="false"></button>
+        <ul class="ddl" role="listbox" hidden></ul>
+      </div>
+    </div>
+
+    <div class="tools">
+      <div class="hint"><b>✎</b> Click any text on the invoice to edit it</div>
+      <div class="actions">
+        <select id="currency" aria-label="Currency">
+          <option>$</option><option>€</option><option>£</option><option>DA</option><option>¥</option>
+        </select>
+        <button class="btn" id="print" type="button">Download PDF</button>
+      </div>
+    </div>
+
+    <div class="stage" id="stage" data-design="classic">
+      <div id="paper" data-design="classic">
+        <div class="top">
+          <div>
+            <div class="ttl" contenteditable="true" data-ph="Title">Invoice</div>
+            <div class="name business" contenteditable="true" data-ph="Your business name">Your Business</div>
+          </div>
+          <div class="meta">
+                        <span>Number</span><span id="invoiceNumber" contenteditable="true">INV-0001</span>
+            <span>Issued</span><input type="date" id="issued">
+            <span>Due</span><input type="date" id="due">
+          </div>
+        </div>
+
+        <div class="parties">
+          <div>
+            <div class="lbl">From</div>
+            <div contenteditable="true" data-ph="Address, email, phone">hello@yourbusiness.com<br>Oran, Algeria</div>
+          </div>
+          <div>
+            <div class="lbl">Billed to</div>
+            <div class="name" contenteditable="true" data-ph="Client name">Client name</div>
+            <div contenteditable="true" data-ph="Client address or email"></div>
+          </div>
+        </div>
+
+        <table class="tbl">
+          <thead>
+            <tr><th>Item</th><th class="q">Qty</th><th class="n">Price</th><th class="n">Total</th><th class="x"></th></tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+        <button class="add" id="addRow" type="button">+ Add item</button>
+
+        <div class="sum">
+          <div><span>Subtotal</span><span id="subtotal"></span></div>
+          <div>
+            <span>Tax <input id="taxRate" class="tax-input" type="number" min="0" max="100" value="0">%</span>
+            <span id="taxAmount"></span>
+          </div>
+          <div class="tot"><span>Total</span><span id="total"></span></div>
+        </div>
+
+        <div class="note" contenteditable="true" data-ph="Add a note or payment details">Thank you for your business. Payment is due within 30 days.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="by">Made by <a href="https://github.com/rayenworks" target="_blank" rel="noopener">RYAN</a><img class="cup" src="assets/img/coffee.png" alt="" width="22" height="22"></div>
+  </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
