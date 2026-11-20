@@ -1,0 +1,6 @@
+/* Tinted: one calm colour, washed over */
+.stage[data-design=tinted] { background: #c9eeea; }
+#paper[data-design=tinted] { --brand: #00897b; --pbg: #f2fbfa; --pline: #bfe3df; --pmut: #4f7f7a; border-radius: 20px; box-shadow: none; }
+#paper[data-design=tinted] .tbl th { color: var(--brand); }
+
+.th--tinted { background: #e3f6f4; color: #00796f; }

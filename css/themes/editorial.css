@@ -1,0 +1,16 @@
+/* Editorial: magazine headline, red accent */
+.stage[data-design=editorial] { background: #ececec; }
+#paper[data-design=editorial] {
+  --brand: #c1121f; --pfg: #111; --pline: #111;
+  font-family: "Bodoni 72", Didot, Georgia, serif;
+  border-radius: 0; border-top: 10px solid #111; box-shadow: none; line-height: 1.6;
+}
+#paper[data-design=editorial] .ttl { font-size: clamp(3rem, 10vw, 5.5rem); font-weight: 800; letter-spacing: -.05em; line-height: .9; color: #111; }
+#paper[data-design=editorial] .tbl th, #paper[data-design=editorial] .lbl {
+  text-transform: none; letter-spacing: 0; font-style: italic; font-size: .95rem; font-weight: 400;
+}
+#paper[data-design=editorial] .tbl td { border-bottom: 1px solid #ccc; }
+#paper[data-design=editorial] .tot { color: var(--brand); border-top: 4px double #111; }
+
+.th--editorial { background: #fff; color: #111; border-top: 3px solid #111; border-radius: 0; box-shadow: 0 0 0 1px #ddd; }
+.th--editorial i:first-child { width: 70%; height: 6px; }

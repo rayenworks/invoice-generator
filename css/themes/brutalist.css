@@ -1,0 +1,17 @@
+/* Brutalist: thick black lines, yellow label */
+.stage[data-design=brutalist] { background: #d6d6d6; }
+#paper[data-design=brutalist] {
+  --brand: #ffe600; --pline: #000; --pmut: #000;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  border: 5px solid #000; border-radius: 0; box-shadow: none;
+}
+#paper[data-design=brutalist] .ttl {
+  background: var(--brand); color: #000; display: inline-block; padding: .2rem .8rem;
+  border: 4px solid #000; font-size: 3.4rem; font-weight: 900; letter-spacing: -.04em;
+}
+#paper[data-design=brutalist] .tbl th { background: #000; color: #fff; padding: .5rem; }
+#paper[data-design=brutalist] .tbl td { border-bottom: 3px solid #000; }
+#paper[data-design=brutalist] .tot { border-top: 5px solid #000; background: var(--brand); padding: .6rem; }
+
+.th--brutalist { background: #fff; color: #000; border: 2px solid #000; border-radius: 0; }
+.th--brutalist i:first-child { background: #ffe600; outline: 1px solid #000; height: 6px; }

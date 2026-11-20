@@ -1,0 +1,13 @@
+/* Corporate: navy, structured, trustworthy */
+.stage[data-design=corporate] { background: #e8ecf2; }
+#paper[data-design=corporate] {
+  --brand: #1f3a5f; --pline: #d5dbe5; --pmut: #5b6b82;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  border-radius: 4px; border-top: 8px solid var(--brand); box-shadow: 0 2px 12px rgba(31, 58, 95, .12);
+}
+#paper[data-design=corporate] .ttl { font-size: 1.9rem; font-weight: 600; letter-spacing: -.01em; }
+#paper[data-design=corporate] .tbl th { background: #f1f4f9; color: var(--brand); padding: .6rem .5rem; }
+#paper[data-design=corporate] .tbl td { padding-left: .5rem; padding-right: .5rem; }
+#paper[data-design=corporate] .tot { background: var(--brand); color: #fff; padding: .7rem 1rem; border: 0; border-radius: 4px; }
+
+.th--corporate { background: #fff; color: #1f3a5f; border-top: 4px solid #1f3a5f; border-radius: 4px; box-shadow: 0 0 0 1px #ddd; }

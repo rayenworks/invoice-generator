@@ -1,0 +1,9 @@
+/* Sheet: big rounded card, big total */
+.stage[data-design=sheet] { background: #f2f2f7; }
+#paper[data-design=sheet] { --brand: #30b0c7; --pmut: #8e8e93; border-radius: 38px; box-shadow: 0 1px 3px rgba(0, 0, 0, .08); }
+#paper[data-design=sheet] .ttl { font-size: 1rem; color: var(--pmut); font-weight: 600; letter-spacing: 0; }
+#paper[data-design=sheet] .tbl td, #paper[data-design=sheet] .tbl th { border: 0; }
+#paper[data-design=sheet] .sum { background: #f2f2f7; border-radius: 24px; padding: 1rem 1.3rem; width: min(320px, 100%); }
+#paper[data-design=sheet] .tot { border: 0; font-size: 2.6rem; letter-spacing: -.04em; color: var(--brand); margin: 0; padding-top: .3rem; }
+
+.th--sheet { background: #f2f2f7; color: #222; border-radius: 14px; }

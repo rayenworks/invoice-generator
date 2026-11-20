@@ -1,0 +1,6 @@
+/* Classic: serif, timeless, quiet */
+#paper[data-design=classic] { font-family: Georgia, "Times New Roman", serif; }
+#paper[data-design=classic] .ttl { color: var(--pfg); font-weight: 400; font-style: italic; letter-spacing: 0; }
+#paper[data-design=classic] .tbl th { font-family: -apple-system, system-ui, sans-serif; }
+
+.th--classic { background: #fff; color: #222; border: 1px solid #ddd; }

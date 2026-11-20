@@ -1,0 +1,10 @@
+/* Glass: frosted layers, soft light */
+.stage[data-design=glass] { background: linear-gradient(135deg, color-mix(in srgb, var(--brand) 55%, #fff), #f0c4ff 55%, #ffd9b0); }
+#paper[data-design=glass] {
+  --pbg: rgba(255, 255, 255, .68); --pline: rgba(0, 0, 0, .08);
+  backdrop-filter: blur(30px) saturate(180%); -webkit-backdrop-filter: blur(30px) saturate(180%);
+  border-radius: 28px; border: 1px solid rgba(255, 255, 255, .6);
+}
+
+.th--glass { background: linear-gradient(135deg, #a8c8ff, #f0c4ff); color: #222; }
+.th--glass i { background: #fff; opacity: .7; }

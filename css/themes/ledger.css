@@ -1,0 +1,10 @@
+/* Ledger: monospace, like a receipt */
+#paper[data-design=ledger] {
+  --pbg: #f6f4ec; --pline: #cfcabb;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  border-left: 10px solid var(--brand); border-radius: 2px; font-size: .92rem;
+}
+#paper[data-design=ledger] .ttl { font-size: 1.8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--pfg); }
+#paper[data-design=ledger] .tbl th, #paper[data-design=ledger] .tbl td { border-bottom: 1px dashed var(--pline); }
+
+.th--ledger { background: #f3f1ea; color: #222; font-family: ui-monospace, Menlo, monospace; border-left: 4px solid var(--brand); }

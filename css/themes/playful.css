@@ -1,0 +1,11 @@
+/* Playful: chunky borders, pink shadow */
+.stage[data-design=playful] { background: #e9e3ff; }
+#paper[data-design=playful] {
+  --brand: #ff5d8f; --pfg: #1b1464; --pmut: #6d65b5; --pline: #d9d3ff;
+  font-family: ui-rounded, "Nunito", "Quicksand", system-ui, sans-serif;
+  border: 3px solid #1b1464; border-radius: 26px; box-shadow: 8px 8px 0 #ff5d8f;
+}
+#paper[data-design=playful] .ttl { font-size: 3rem; font-weight: 900; transform: rotate(-2deg); display: inline-block; }
+#paper[data-design=playful] .tbl td { border-bottom: 2px dashed var(--pline); }
+
+.th--playful { background: #e9e3ff; color: #1b1464; border: 1.5px solid #1b1464; box-shadow: 2px 2px 0 #ff5d8f; border-radius: 9px; }
